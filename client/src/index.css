@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Sofia+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+nav {
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+p {
+    font-family: 'Sofia Sans Condensed', sans-serif;
+}
+
+.bg-background {
+    background-color: #333333;
+}
+
+.text-lightred {
+    color: #c82113;
+}
+
+.text-darkred {
+    color: #94180e;
+}
+
+.text-blue {
+    color: #1085df;
+}
+
+.text-darkblue {
+    color: #0e5a94;
+}
+
+h3 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: #c82113;
+}
