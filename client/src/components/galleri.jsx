@@ -11,12 +11,12 @@ const Galleri = () => {
     <section id='gallery'>
       <h3>Galleri</h3>
       <article className='grid sm:grid-cols-2 lg:grid-cols-3 gap-2 mt-8'>
-        <img src={chili1} alt="Chili" />
-        <img src={chili2} alt="Chili" />
-        <img src={chili3} alt="Chili" />
-        <img src={chili4} alt="Chili" />
-        <img src={chili5} alt="Chili" />
-        <img src={chili6} alt="Chili" />
+        <img className='transition duration-150 ease-out hover:ease-in grayscale hover:grayscale-0' src={chili1} alt="Chili" />
+        <img className='transition duration-150 ease-out hover:ease-in grayscale hover:grayscale-0' src={chili2} alt="Chili" />
+        <img className='transition duration-150 ease-out hover:ease-in grayscale hover:grayscale-0' src={chili3} alt="Chili" />
+        <img className='transition duration-150 ease-out hover:ease-in grayscale hover:grayscale-0' src={chili4} alt="Chili" />
+        <img className='transition duration-150 ease-out hover:ease-in grayscale hover:grayscale-0' src={chili5} alt="Chili" />
+        <img className='transition duration-150 ease-out hover:ease-in grayscale hover:grayscale-0' src={chili6} alt="Chili" />
       </article>
     </section>
   )

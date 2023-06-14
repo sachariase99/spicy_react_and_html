@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Burgermenu from './burgermenu'
 import MyForm from './form'
 
-const Placeholder = () => {
+const Navbar = () => {
   // Tilstanden for at afgøre om modalen er åben eller lukket
   const [isOpen, setIsOpen] = useState(false);
 
@@ -18,12 +18,12 @@ const Placeholder = () => {
 
   return (
     <nav className='bg-black'>
-      <ul className='hidden sm:flex text-[#dddddd] max-w-[1000px] m-auto text-[1.5rem] gap-4 p-2 cursor-pointer'>
+      <ul className='hidden sm:flex text-[#dddddd] max-w-[1000px] m-auto text-[1.5rem] gap-4 p-2'>
         <li className='hover:text-[#0e5a94]'><a href="#start">Start</a></li>
         <li className='hover:text-[#0e5a94]'><a href="#spicy">Om Spicy</a></li>
         <li className='hover:text-[#0e5a94]'><a href="#galleri">Galleri</a></li>
         <li className='hover:text-[#0e5a94]'><a href="#favorit">Favorit</a></li>
-        <li className='hover:text-[#0e5a94]' onClick={openModal}>Kontakt</li>
+        <li className='hover:text-[#0e5a94] cursor-pointer' onClick={openModal}>Kontakt</li>
         {isOpen && (
         <div className="bg-[#1a1a1a] text-[#a1a1a1] fixed top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] h-[400px] w-[350px] rounded-[20px]">
           <div>
@@ -41,4 +41,4 @@ const Placeholder = () => {
   )
 }
 
-export default Placeholder
+export default Navbar
