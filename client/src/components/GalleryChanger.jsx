@@ -29,7 +29,7 @@ const GalleryChanger = () => {
                     <img className="w-[100%] transition duration-300 ease-out hover:ease-in grayscale hover:grayscale-0" src={smallImage1} alt="Choose" />
                 </div>
                 <div className="div3 col-span-1 row-span-1" onClick={() => swapImages(smallImage2, setSmallImage2, bigImage, setBigImage)}>
-                    <img className="w-[100%] transition duration-150 ease-out hover:ease-in grayscale hover:grayscale-0" src={smallImage2} alt="Choose" />
+                    <img className="w-[100%] transition duration-300 ease-out hover:ease-in grayscale hover:grayscale-0" src={smallImage2} alt="Choose" />
                 </div>
                 <div className="div4 col-span-1 row-span-1" onClick={() => swapImages(smallImage3, setSmallImage3, bigImage, setBigImage)}>
                     <img className="w-[100%] transition duration-300 ease-out hover:ease-in grayscale hover:grayscale-0" src={smallImage3} alt="Choose" />
