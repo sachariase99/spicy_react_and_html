@@ -25,7 +25,7 @@ const Placeholder = () => {
         <li className='hover:text-[#0e5a94]'><a href="#favorit">Favorit</a></li>
         <li className='hover:text-[#0e5a94]' onClick={openModal}>Kontakt</li>
         {isOpen && (
-        <div className="bg-[#1a1a1a] text-[#a1a1a1] absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] h-[400px] w-[350px] rounded-[20px]">
+        <div className="bg-[#1a1a1a] text-[#a1a1a1] fixed top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] h-[400px] w-[350px] rounded-[20px]">
           <div>
             {/* Knap til at lukke modalen */}
             <span className="absolute right-[0] text-[3rem] cursor-pointer text-white" onClick={closeModal}>&times;</span>

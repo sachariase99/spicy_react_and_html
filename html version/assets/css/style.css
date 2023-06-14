@@ -71,8 +71,7 @@ nav {
     background-color: black;
 }
 
-nav ul,
-a {
+nav ul, nav ul a {
     display: flex;
     color: #dddddd;
     max-width: 1000px;
@@ -86,7 +85,7 @@ a {
     align-items: center;
 
     &:hover {
-        color: var(--darkblue);
+        color: var(--blue);
     }
 }
 
