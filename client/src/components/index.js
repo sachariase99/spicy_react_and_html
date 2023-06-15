@@ -4,6 +4,7 @@ import Spicy from "./spicy";
 import Galleri from "./galleri";
 import Favorit from "./favorit";
 import Footer from "./footer";
+import LandingPage from "./landingPage";
 
 export {
     Header,
@@ -12,4 +13,5 @@ export {
     Galleri,
     Favorit,
     Footer,
+    LandingPage,
 }
