@@ -20,7 +20,7 @@ const LandingPage = () => {
         }
         return newPercentage;
       });
-    });
+    }, 30);
 
     const handleLoad = () => {
       clearInterval(timer);
@@ -29,9 +29,9 @@ const LandingPage = () => {
         setIsInitialLoad(false);
         setTimeout(() => {
           setIsLoadingComplete(false);
-          setIsBlurEnabled(false); // Deaktiver sløring efter "Indlæsning fuldført!" forsvinder
-        }, 1000); // Fjern teksten "Indlæsning fuldført!" efter 1 sekund
-      }, 1000); // Vis "Indlæsning fuldført!" i 1 sekund
+          setIsBlurEnabled(false); // Disable blur after "Loading complete!" disappears
+        }, 1000); // Remove the "Loading complete!" text after 1 second
+      }, 1000); // Show "Loading complete!" for 1 second
     };
 
     window.addEventListener('load', handleLoad);
@@ -55,7 +55,11 @@ const LandingPage = () => {
         ) : (
           <div className={`loader ${isInitialLoad ? '' : 'hidden'}`}>
             <div className="loader-content">
-              <div className="percentage">{percentage}%</div>
+              <div className="progress-circle">
+                <div className="circle-border"></div>
+                <div className="circle-fill" style={{ clip: `rect(0px, ${percentage}px, 200px, 0px)` }}></div>
+                <div className="circle-content">{percentage}%</div>
+              </div>
             </div>
           </div>
         )}
