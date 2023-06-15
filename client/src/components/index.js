@@ -5,6 +5,7 @@ import Galleri from "./galleri";
 import Favorit from "./favorit";
 import Footer from "./footer";
 import LandingPage from "./landingPage";
+import Scrolltop from "./scrolltop";
 
 export {
     Header,
@@ -14,4 +15,5 @@ export {
     Favorit,
     Footer,
     LandingPage,
+    Scrolltop,
 }

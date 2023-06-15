@@ -1,6 +1,6 @@
 import React from 'react'
 import background from './images/Background.jpg';
-import { Header, Navbar, Spicy, Galleri, Favorit, Footer, LandingPage } from "./components";
+import { Header, Navbar, Spicy, Galleri, Favorit, Footer, LandingPage, Scrolltop } from "./components";
 
 const App = () => (
   <div>
@@ -15,6 +15,7 @@ const App = () => (
         <Favorit />
       </div>
       <Footer />
+      <Scrolltop />
     </div>
     <LandingPage />
   </div>

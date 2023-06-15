@@ -8,7 +8,7 @@ import chili6 from '../images/Product/Chili-06.jpg'
 
 const Galleri = () => {
   return (
-    <section id='gallery'>
+    <section id='galleri'>
       <h3>Galleri</h3>
       <article className='grid sm:grid-cols-2 lg:grid-cols-3 gap-2 mt-8'>
         <img className='transition duration-150 ease-out hover:ease-in grayscale hover:grayscale-0' src={chili1} alt="Chili" />

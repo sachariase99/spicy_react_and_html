@@ -51,7 +51,7 @@ const LandingPage = () => {
     <div className="fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
       <div id="blurred" className="content">
         {isLoadingComplete ? (
-          <h1 className='uppercase font-bold text-6xl text-green-500'>Indlæsning fuldført!</h1>
+          <h1 className='uppercase font-bold text-6xl text-green-500 text-center'>Indlæsning fuldført!</h1>
         ) : (
           <div className={`loader ${isInitialLoad ? '' : 'hidden'}`}>
             <div className="loader-content">
